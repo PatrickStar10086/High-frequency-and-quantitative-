@@ -126,7 +126,6 @@ def market_making_strategy(df, initial_capital=100000, commission=0.0002, slippa
     df_trades = pd.DataFrame(trades)
     return df, df_trades
     
-
 # 3. 可视化结果并保存为 HTML 和 PNG
 def visualize_and_save_results(df, df_trades, save_dir):
     """  
@@ -218,6 +217,3 @@ if __name__ == '__main__':
     # 可视化结果并保存为 HTML 和 PNG  
     visualize_and_save_results(df, df_trades, save_dir)
     save_data_to_local(df, df_trades, save_dir)
-
-
-        
